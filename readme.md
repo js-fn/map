@@ -1,7 +1,7 @@
 <center>
   <h1 align="center">map function</h1>
   <p align="center">
-    <a href="https://codecov.io/js-fn/map" rel="nofollow">
+    <a href="https://codecov.io/gh/js-fn/map" rel="nofollow">
       <img src="https://codecov.io/gh/js-fn/map/branch/master/graph/badge.svg?refresh">
     </a>
     <a href="https://github.com/prettier/prettier">
