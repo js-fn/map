@@ -22,7 +22,7 @@ jobs:
         with:
           # User defined upload name. Visible in Codecov UI
           # Repository upload token - get it from codecov.io. Required only for private repositories
-          token: 6f4834bd-289e-49c6-af48-a720cbb65f67
+          token: c6348e20-1b3a-4b59-a8c1-8862e51b099d
 
     env:
       CI: true

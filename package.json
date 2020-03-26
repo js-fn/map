@@ -6,7 +6,6 @@
   "type": "module",
   "main": "map.mjs",
   "scripts": {
-    "env": "set",
     "lint": ". ./scripts.sh; lint",
     "test": ". ./scripts.sh; lint_test",
     "ct": ". ./scripts.sh; watch_test",
