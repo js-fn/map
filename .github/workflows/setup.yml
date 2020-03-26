@@ -1,0 +1,21 @@
+name: setup
+on: [push]
+jobs:
+  build:
+    if: github.repository != 'js-fn/template'
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [13.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: test -f __package_name__.mjs && node setup.mjs
+
+      - uses: stefanzweifel/git-auto-commit-action@v4.1.1
+        with:
+          commit_message: Initial repository setup

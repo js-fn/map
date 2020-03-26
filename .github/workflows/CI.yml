@@ -1,0 +1,28 @@
+name: CI
+on: [push]
+jobs:
+  build:
+    if: github.repository != 'js-fn/template'
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [13.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run cover
+      - uses: codecov/codecov-action@v1.0.6
+        with:
+          # User defined upload name. Visible in Codecov UI
+          # Repository upload token - get it from codecov.io. Required only for private repositories
+          token: 6f4834bd-289e-49c6-af48-a720cbb65f67
+
+    env:
+      CI: true

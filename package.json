@@ -1,0 +1,29 @@
+{
+  "name": "@jsfn/__package_name__",
+  "version": "1.0.0",
+  "description": "__package_name__ function",
+  "repository": "js-fn/__package_name__",
+  "type": "module",
+  "main": "__package_name__.mjs",
+  "scripts": {
+    "env": "set",
+    "lint": ". ./scripts.sh; lint",
+    "test": ". ./scripts.sh; lint_test",
+    "ct": ". ./scripts.sh; watch_test",
+    "cover": ". ./scripts.sh; cover"
+  },
+  "keywords": [
+    "__package_name__ function",
+    "__package_name__",
+    "functional"
+  ],
+  "author": "Andrea Parodi <andrea@parro.it>",
+  "license": "MIT",
+  "devDependencies": {
+    "codecov": "^3.6.5",
+    "eslint": "^6.8.0",
+    "nyc": "^15.0.0",
+    "prettier": "^2.0.2",
+    "testami": "^1.8.0"
+  }
+}
