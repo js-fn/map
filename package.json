@@ -1,10 +1,10 @@
 {
-  "name": "@jsfn/__package_name__",
+  "name": "@jsfn/map",
   "version": "1.0.0",
-  "description": "__package_name__ function",
-  "repository": "js-fn/__package_name__",
+  "description": "map function",
+  "repository": "js-fn/map",
   "type": "module",
-  "main": "__package_name__.mjs",
+  "main": "map.mjs",
   "scripts": {
     "env": "set",
     "lint": ". ./scripts.sh; lint",
@@ -13,8 +13,8 @@
     "cover": ". ./scripts.sh; cover"
   },
   "keywords": [
-    "__package_name__ function",
-    "__package_name__",
+    "map function",
+    "map",
     "functional"
   ],
   "author": "Andrea Parodi <andrea@parro.it>",
