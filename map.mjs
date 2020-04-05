@@ -1,19 +1,3 @@
-function* _map(iterable, fn) {
-  let i = 0;
-  for (const item of iterable) {
-    yield fn(item, i);
-    i++;
-  }
-}
-
-async function* _mapAsync(iterable, fn) {
-  let i = 0;
-  for await (const item of iterable) {
-    yield fn(item, i);
-    i++;
-  }
-}
-
 export function map(iterable, fn = iterable) {
   // this is a clever trick, but it leave some space to
   // inconsistencies like map(fn,fn) or map(2,2) that create a partial
@@ -35,6 +19,22 @@ export function map(iterable, fn = iterable) {
   }
 
   throw new Error("Iterable argument expected.");
+}
+
+function* _map(iterable, fn) {
+  let i = 0;
+  for (const item of iterable) {
+    yield fn(item, i);
+    i++;
+  }
+}
+
+async function* _mapAsync(iterable, fn) {
+  let i = 0;
+  for await (const item of iterable) {
+    yield fn(item, i);
+    i++;
+  }
 }
 
 function isIterable(iter) {

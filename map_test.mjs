@@ -52,6 +52,6 @@ async function* asyncOdd() {
   await wait(30);
   yield 5;
   await wait(50);
-  yield 7;
+  yield Promise.resolve(7);
   await wait(70);
 }
