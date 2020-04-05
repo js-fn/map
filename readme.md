@@ -21,6 +21,6 @@
 
 # License
 
-The MIT License (MIT)
+This software is [MIT licensed](license)
 
 © 2020 Andrea Parodi
