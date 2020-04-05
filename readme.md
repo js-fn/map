@@ -18,3 +18,9 @@
 
 
 > A map function that works with iterables and async iterable
+
+# License
+
+The MIT License (MIT)
+
+© 2020 Andrea Parodi
